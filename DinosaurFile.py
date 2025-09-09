@@ -11,16 +11,16 @@ def short_jump():
     kb.press('space')
     kb.release('space')
 
-def long_jump():
+def long_jump(mult=1):
     #Presses and holds the space bar to make the dinosaur jumpa bit higher.
     kb.press('space')
-    t.sleep(jumpHoldTime)
+    t.sleep(jumpHoldTime * mult)
     kb.release('space')
 
-def duck():
+def duck(mult=1):
     #Presses the down arrow key to duck the dinosaur.
     kb.press('down')
-    t.sleep(duckTime)
+    t.sleep(duckTime * mult)
     kb.release('down')
 
 
