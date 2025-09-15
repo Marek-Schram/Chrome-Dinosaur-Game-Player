@@ -8,11 +8,6 @@ def get_px(img, x, y):
     return px[x, y]
 
 
-def get_px(img, x, y):
-    px = img.load()
-    return px[x, y]
-
-
 def get_game_region():
     print("Move your mouse to the TOP-LEFT corner of the game and press 's'")
     while True:
@@ -176,4 +171,5 @@ def start():
 
 
 if __name__ == "__main__":
+
     start()
